@@ -71,6 +71,7 @@ const products = [
 //     console.log(`${products[i].title}: ${products[i].price}`);
 // }
 
+// 6. Написать функцию, которая получает в качестве аргумента массив из объектов и возвращает объект с самым дорогим товаром.
 function expensive(array){
     let item = array[0];
     for(let i = 0; i < array.length; i++){
