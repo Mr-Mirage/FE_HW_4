@@ -71,3 +71,13 @@ const products = [
 //     console.log(`${products[i].title}: ${products[i].price}`);
 // }
 
+function expensive(array){
+    let item = array[0];
+    for(let i = 0; i < array.length; i++){
+        if(array[i].price > item.price){
+            item = array[i];
+        }
+    } 
+    return item;
+}
+    console.log(expensive(products));
